@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f6fc;
+        }
+
+        .header {
+            background-color: rgb(10, 10, 57);
+            width: 100%;
+            min-height: 17vh;
+            display: flex;
+            align-items: center;
+            padding: 8px 16px;
+            flex-direction: row;
+            flex-wrap: wrap;
+            border-bottom: 3px solid #06b6d4;
+        }
+
+        
+        .profile-pic {
+            width: 15vh;
+            height: 15vh;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .profile-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .profile-pic {
+            width: 14vh;
+            height: 14vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;}
+
+        .profile-ring {
+            width: 100%;
+            height: 100%;
+            padding: 4px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #0077b5, #c4b405);
+}
+
+        .profile-ring img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+    display: block;
+}
+        .header-text {
+            display: flex;
+            flex-direction: column;
+            margin-left: 12px;
+        }
+
+        .header-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #ffffff;
+            letter-spacing: 0.3px;
+        }
+
+        .header-course {
+            font-size: 14px;
+            color: rgba(255, 255, 255, 0.65);
+            margin-top: 4px;
+        }
+
+        .main {
+            background-color: rgb(238, 233, 233);
+            width: 100%;
+            min-height: 70vh;
+            padding: 20px;
+        }
+
+        .footer {
+            background-color: rgb(10, 10, 57);
+            width: 100%;
+            min-height: 15vh;
+        }
+
+        .header-badge {
+            margin-top: 14px;
+            background: #FFD100;
+            color: #0D1B3E;
+            font-size: 10px;
+            font-weight: 610;
+            padding: 5px 18px;
+            border-radius: 20px;
+            letter-spacing: 0.5px;
+            align-items: center;
+            width: 150px;
+        }
+
+        table {
+            width: 97%;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 9px;
+            overflow: hidden;
+        }
+
+        th {
+            background-color: rgb(10, 10, 57);
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+
+        td {
+            padding: 15px;
+            vertical-align: top;
+        }
+
+        tr {
+            border-bottom: 1px solid #ddd;
+        }
+
+        ul, ol {
+            margin-left: 18px;
+        }
+
+        .footer {
+    background-color: rgb(10, 10, 57);
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: white;
+    font-size: 14px;
+}
+
+.contact-item img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+hr{
+    height: 8px;
+    background-color:#065fdb;
+}
+
+        /* Responsive: stack table on small screens */
+        @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+                width: 100%;
+            }
+
+            thead tr {
+                display: flex;
+            }
+
+            th {
+                flex: 1;
+            }
+
+            td {
+                border-bottom: 1px solid #ddd;
+            }
+
+            .header-name {
+                font-size: 16px;
+            }
+
+            .header-course {
+                font-size: 12px;
+            }
+
+            .footer-content {
+                gap: 16px;
+            }
+
+            .contact-item {
+                font-size: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <section class="header">
+        <div class="profile-pic">
+            <div class="profile-ring">
+                <img src="joel.jpg" alt="Profile Picture">
+            </div>
+        </div>
+
+        <div class="header-text">
+            <div class="header-name">GUMISIRIZA JOEL</div>
+            <div class="header-course">Bachelors In Information Technology</div>
+            <div class="header-badge">Kyambogo University</div>
+        </div>
+    </section>
+
+    <section class="main">
+        <table>
+            <tr>
+                <th>Education Background</th>
+                <th>Sills and Hobbies</th>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li>Kyambogo University</li>
+                        <p>(2024 - 2027)</p>
+                        <li>St. Mary's Secondary Boarding School Kitende (O & A level)</li>
+                        <li>City Parent's Primary School</li>
+                        <li>Lyna Day Care Nursery School</li>
+                    </ol>
+                </td>
+                <td>
+                    <ul>
+                        <li>
+                            <strong>Programming and Database management</strong>
+                        </li>
+                        <ul>
+                            <li>Python, C, C++</li>
+                            <li>JavaScript, HTML, CSS</li>
+                            <li>MySQL, PostgreSQL</li>
+                        </ul>
+                        <li>
+                            <strong>Network management and camera Installation</strong>
+                        </li>
+                        <ul>
+                            <li>CCNA, CompTIA Network+</li>
+                            <li>IP camera setup and configuration</li>
+                            <li>VLAN and LAN setup</li>
+                        </ul>
+                        <li>
+                            <strong>IT Support and Maintenance</strong>
+                        </li>
+                        <ul> 
+                            <li>Hardware troubleshooting and repair</li>
+                            <li>Software installation and configuration</li>
+                        </ul>    
+                        
+                        <li>Gym and Football</li>
+                        <li>Reading</li>
+                        <li>Travelling</li>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="footer">
+        <div class="footer-content">
+
+        <div class="contact-item">
+            <img src="whatsAPP.png" alt="WhatsApp">
+            <span>+256 774 116972</span>
+        </div>
+
+        <div class="contact-item">
+            <img src="instagram.png" alt="Instagram">
+            <span>@joel prominent</span>
+        </div>
+
+        <div class="contact-item">
+            <img src="linkedin.png" alt="LinkedIn">
+            <span>Gumisiriza Joel</span>
+        </div>
+
+        <div class="contact-item">
+            <img src="gmail.png" alt="Email">
+            <span>joelgumisiriza783@gmail.com</span>
+        </div>
+
+    </div>
+    </section>
+
+</body>
+</html>
